@@ -1,0 +1,65 @@
+1. workday standard reports : task
+   standard report , XpressO report & Custom
+
+2. create custom report : task
+3. business object details : task
+   Hire employee , comensation , dependents ,benefits, employee visa etc..
+
+4. All custom reports : Task
+5. Transfer ownership of custom report : Task
+6. segment based security : task
+7. Maintain Dashboard : Task
+8. Create custom dashboard : Task
+9. create custom image: Task
+
+1. what is the diff between simple and advanced report ?
+A. 1. Prompts ,output,share & advanced will be available for only advanced. 
+   2. And in simple u cannot add the fields from RBO (Dependents)
+   3. Simple cannot be shared with users.
+   4. Sub filter is not available in simple.
+ 
+2. how will u identify the alias or prefix in workday ?
+A. type ? in search box
+
+3. I have created a Custom report i want to change the primary business object and data source ? is it possible ?
+A. we can change the data source only to related to the already used primary business object. 
+   But we cannot change Primary business object.
+
+4. how many field types we have in workday ? and list them ?
+A. we have 10. 1. Text, 2. date , 3. datetime , 4. datetimezone, 5. time, 6. numeric, 7. currency , 8.boolean , 9. single instance , 10. Multi instance
+
+5. what is related business object ?
+A. it will have the data relevent to primary BO but in one to many way.
+
+6. what is report tag ?
+A. we can add custom reports to the relevent category or we can create one custom report tag and add the cust reports to it
+   so we can maintain all the cust reports in one report tag. (it is to identify the report categorys)
+
+7. What is the diff between Filter and Sub filter ? after applying subfilter what is required to do at main fiter condition?
+A. only we can add fields from Business object in filter and related business object fields into Sub filter.
+   After applying the subfilter we must add related business object in filetr with is not empty condition to avoid null values.
+
+8. Diff between Prompt the user for value / Prompt the user for value and ignore if the value is blank.
+A. It will Pass null value if we don't    / It will ignore prompt and fetch all the data if prompt is empty.
+   specify anything in Prompt.  
+
+9. Where you are enabling prompt in report ?
+A. eneble in prompts tab and call it in filter tab.
+
+10. Share with all authorized users / Share with all authorized groups and users ?
+A.  sensitive data can be given access with option Share with all authorized groups and users.
+
+11. Where will you enable save parameters ? what is the use of it ?
+A. in Advanced tab we can see enable save parameters option. It will be used to save the time during report execution.
+
+12. How many worklets we can add to a custom Dashboards ?
+A. 6 (means we can call max 6 reports in a dashboard)
+
+13. I am unable to call custom report in custom dashboard ? what might be the reason ?
+A. we need to check enable as worklet in our custom report then we can add in dashboard worklet tabs.
+
+14. Stpes to create custom dashboard and enable user options and add custom report to dashboard ?
+A. 1. create a custom dashboard by using task "Create custom dashboard".
+   2. enable user options to dashboard by clicking on edit dashboard.
+   3. check enable as worklet in our custom report and mention type of worklet like donut then we can add in dashboard worklet tabs.
+   4. Call the custom report into dashboard.
